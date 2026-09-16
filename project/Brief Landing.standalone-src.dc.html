@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<template id="__bundler_thumbnail" data-bg-color="#ffffff">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#ffffff"/>
+    <rect x="450" y="230" width="300" height="80" rx="18" fill="#101828"/>
+    <rect x="450" y="340" width="300" height="80" rx="18" fill="#3b6ef6"/>
+    <rect x="450" y="450" width="180" height="80" rx="18" fill="#e4e7ec"/>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #ffffff; }
+  a { color: #101828; text-decoration: none; }
+  a:hover { opacity: 0.7; }
+  input::placeholder { color: #98a2b3; }
+</style>
+</helmet>
+
+<div style="font-family: 'Instrument Sans', Helvetica, Arial, sans-serif; color: #101828; background: #fff; -webkit-font-smoothing: antialiased">
+
+  <header style="border-bottom: 1px solid #f0f1f3; position: sticky; top: 0; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); z-index: 20">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 20px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap">
+      <a href="#top" style="display: flex; align-items: center; gap: 11px">
+        <img src="assets/brief-icon.png" alt="" style="width: 30px; height: 30px; border-radius: 8px; display: block">
+        <span style="font-size: 18px; font-weight: 700; letter-spacing: -0.02em">Brief</span>
+      </a>
+      <nav style="display: flex; align-items: center; gap: 28px; font-size: 15px; color: #475467">
+        <a href="#features" style="color: #475467">Features</a>
+        <a href="#how" style="color: #475467">How it works</a>
+        <a href="#privacy" style="color: #475467">Privacy</a>
+        <a href="#privacy" style="background: #101828; color: #fff; padding: 10px 18px; border-radius: 999px; font-weight: 600; font-size: 14px">Get notified</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="top" style="max-width: 1120px; margin: 0 auto; padding: 72px 32px 64px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+    <div style="flex: 1 1 420px; min-width: 0">
+      <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600; color: {{ accentInk }}; background: {{ accentWash }}; padding: 7px 14px; border-radius: 999px; margin-bottom: 26px">Coming soon on iPhone</div>
+      <h1 style="margin: 0 0 22px; font-size: clamp(40px, 5.6vw, 62px); line-height: 1.03; letter-spacing: -0.035em; font-weight: 700; text-wrap: balance">Your whole day, on one screen.</h1>
+      <p style="margin: 0 0 34px; font-size: 20px; line-height: 1.5; color: #475467; max-width: 30em; text-wrap: pretty">Brief gathers your weather, calendar, email, transactions, commute and reminders into a single morning snapshot — and every card tells you what to do about it, not just what happened.</p>
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap">
+        <a href="#privacy" style="display: inline-flex; align-items: center; gap: 10px; background: #101828; color: #fff; padding: 16px 26px; border-radius: 12px; font-size: 16px; font-weight: 600">Sign up to get notified</a>
+      </div>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 40px">
+        <span style="font-size: 13px; font-weight: 500; color: #344054; border: 1px solid #e4e7ec; padding: 7px 13px; border-radius: 999px">Calendar</span>
+        <span style="font-size: 13px; font-weight: 500; color: #344054; border: 1px solid #e4e7ec; padding: 7px 13px; border-radius: 999px">Gmail</span>
+        <span style="font-size: 13px; font-weight: 500; color: #344054; border: 1px solid #e4e7ec; padding: 7px 13px; border-radius: 999px">Transactions</span>
+        <span style="font-size: 13px; font-weight: 500; color: #344054; border: 1px solid #e4e7ec; padding: 7px 13px; border-radius: 999px">Weather</span>
+        <span style="font-size: 13px; font-weight: 500; color: #344054; border: 1px solid #e4e7ec; padding: 7px 13px; border-radius: 999px">Commute</span>
+        <span style="font-size: 13px; font-weight: 500; color: #344054; border: 1px solid #e4e7ec; padding: 7px 13px; border-radius: 999px">Reminders</span>
+        <span style="font-size: 13px; font-weight: 500; color: #344054; border: 1px solid #e4e7ec; padding: 7px 13px; border-radius: 999px">Air quality</span>
+      </div>
+    </div>
+    <div style="flex: 0 1 360px; display: flex; justify-content: center; min-width: 260px">
+      <div style="padding: 10px; background: #1a1d24; border-radius: 50px; box-shadow: 0 30px 70px rgba(16,24,40,0.24); max-width: 100%">
+        <img src="assets/brief-screen.png" alt="Brief showing today's schedule, weather, email and transactions" style="display: block; width: 100%; max-width: 330px; border-radius: 41px; background: #fff">
+      </div>
+    </div>
+  </section>
+
+  <section id="features" style="background: #f8f9fb; border-top: 1px solid #f0f1f3; border-bottom: 1px solid #f0f1f3">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 80px 32px">
+      <h2 style="margin: 0 0 14px; font-size: clamp(30px, 3.4vw, 40px); letter-spacing: -0.03em; font-weight: 700; text-wrap: balance">Informational is easy. Actionable is the point.</h2>
+      <p style="margin: 0 0 44px; font-size: 18px; line-height: 1.55; color: #475467; max-width: 34em">Brief answers the questions you'd otherwise open five apps to work out.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px">
+        <div style="background: #fff; border: 1px solid #eceff3; border-radius: 16px; padding: 28px">
+          <div style="font: 700 11px/1 'JetBrains Mono', monospace; letter-spacing: 0.12em; color: {{ accentInk }}; margin-bottom: 18px">CONSOLIDATION</div>
+          <h3 style="margin: 0 0 10px; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Five apps, one glance</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #475467">Calendar, inbox, cards, weather and traffic all land in the same short scroll. No app-hopping before coffee.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eceff3; border-radius: 16px; padding: 28px">
+          <div style="font: 700 11px/1 'JetBrains Mono', monospace; letter-spacing: 0.12em; color: {{ accentInk }}; margin-bottom: 18px">SUMMARY</div>
+          <h3 style="margin: 0 0 10px; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Only what changes your day</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #475467">When rain starts and how long it lasts. When to leave for your 10:30 given traffic. Which email genuinely needs you.</p>
+        </div>
+        <div style="background: #fff; border: 1px solid #eceff3; border-radius: 16px; padding: 28px">
+          <div style="font: 700 11px/1 'JetBrains Mono', monospace; letter-spacing: 0.12em; color: {{ accentInk }}; margin-bottom: 18px">WIDGET</div>
+          <h3 style="margin: 0 0 10px; font-size: 21px; font-weight: 600; letter-spacing: -0.02em">Answers on your home screen</h3>
+          <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #475467">The same overview lives in a widget, so most mornings a glance is the whole interaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width: 1120px; margin: 0 auto; padding: 80px 32px 0">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px 24px; border-top: 1px solid #eceff3; padding-top: 40px">
+      <div>
+        <div style="font-size: 15px; font-weight: 600; margin-bottom: 6px">Rain in the next hour?</div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #667085">Brief names the window, not a percentage.</p>
+      </div>
+      <div>
+        <div style="font-size: 15px; font-weight: 600; margin-bottom: 6px">When should I leave?</div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #667085">Live traffic against your next meeting's location.</p>
+      </div>
+      <div>
+        <div style="font-size: 15px; font-weight: 600; margin-bottom: 6px">Anything I owe a reply?</div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #667085">The emails worth a look, separated from the rest.</p>
+      </div>
+      <div>
+        <div style="font-size: 15px; font-weight: 600; margin-bottom: 6px">What did today cost?</div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #667085">Card activity totalled as it posts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="max-width: 1120px; margin: 0 auto; padding: 80px 32px">
+    <h2 style="margin: 0 0 44px; font-size: clamp(30px, 3.4vw, 40px); letter-spacing: -0.03em; font-weight: 700">Set up once, in about a minute</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 36px">
+      <div style="border-top: 2px solid #101828; padding-top: 20px">
+        <div style="font: 700 13px/1 'JetBrains Mono', monospace; color: #98a2b3; margin-bottom: 14px">01</div>
+        <h3 style="margin: 0 0 8px; font-size: 20px; font-weight: 600">Connect your accounts</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #475467">Calendar, Gmail, cards, reminders — connect one or all of them. Brief works with whatever you give it.</p>
+      </div>
+      <div style="border-top: 2px solid #101828; padding-top: 20px">
+        <div style="font: 700 13px/1 'JetBrains Mono', monospace; color: #98a2b3; margin-bottom: 14px">02</div>
+        <h3 style="margin: 0 0 8px; font-size: 20px; font-weight: 600">Tell Brief where you go</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #475467">Home and work, so commute, weather and air quality are about your day rather than a city average.</p>
+      </div>
+      <div style="border-top: 2px solid #101828; padding-top: 20px">
+        <div style="font: 700 13px/1 'JetBrains Mono', monospace; color: #98a2b3; margin-bottom: 14px">03</div>
+        <h3 style="margin: 0 0 8px; font-size: 20px; font-weight: 600">Add the widget</h3>
+        <p style="margin: 0; font-size: 16px; line-height: 1.55; color: #475467">Then check it once each morning — app or home screen — and get on with the day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" style="background: #101828; color: #fff">
+    <div style="max-width: 1120px; margin: 0 auto; padding: 76px 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 48px; align-items: start">
+      <div>
+        <h2 style="margin: 0 0 16px; font-size: clamp(28px, 3vw, 34px); letter-spacing: -0.03em; font-weight: 700">Your data stays yours</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #cdd3de">Brief reads your accounts to build your snapshot and nothing else. No selling, no ad profiles, no training on your inbox. Disconnect a source and its data leaves with it.</p>
+      </div>
+      <sc-if value="{{ showWaitlist }}" hint-placeholder-val="{{ true }}">
+        <div>
+          <h3 style="margin: 0 0 14px; font-size: 20px; font-weight: 600">Be first to know when it ships</h3>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap">
+            <input type="email" placeholder="you@email.com" style="flex: 1 1 200px; min-width: 0; background: #1c2433; border: 1px solid #303b4d; color: #fff; padding: 14px 16px; border-radius: 10px; font-size: 15px; font-family: inherit">
+            <button style="background: #fff; color: #101828; border: 0; padding: 14px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; font-family: inherit; cursor: pointer">Join</button>
+          </div>
+          <p style="margin: 12px 0 0; font-size: 13px; color: #98a2b3">One email at launch. Nothing else.</p>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <footer style="max-width: 1120px; margin: 0 auto; padding: 28px 32px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; font-size: 14px; color: #667085">
+    <span>© 2026 Brief</span>
+    <div style="display: flex; gap: 24px">
+      <a href="mailto:hello@brief.app" style="color: #667085">hello@brief.app</a>
+      <a href="#" style="color: #667085">Privacy policy</a>
+      <a href="#" style="color: #667085">Support</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentColor&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#3b6ef6&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#3b6ef6&quot;,&quot;#0f766e&quot;,&quot;#a8542a&quot;,&quot;#101828&quot;]},&quot;appStoreUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;#&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;showWaitlist&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const accent = this.props.accentColor ?? "#3b6ef6";
+    return {
+      appStoreUrl: this.props.appStoreUrl ?? "#",
+      showWaitlist: this.props.showWaitlist ?? true,
+      accentInk: accent,
+      accentWash: `color-mix(in oklab, ${accent} 10%, white)`
+    };
+  }
+}
+</script>
+</body>
+</html>
