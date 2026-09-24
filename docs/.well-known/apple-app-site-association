@@ -1,0 +1,8 @@
+{
+  "applinks": {
+    "details": [{
+      "appID": "7YUJ37NJGU.Brief.DailySnapshot",
+      "paths": ["/plaid-oauth", "/plaid-oauth/*"]
+    }]
+  }
+}
